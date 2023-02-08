@@ -1,5 +1,0 @@
-(define (zip-with f L M)
-  (if (or (null? L) (null? M))
-      '()
-      (cons (f (car L) (car M))
-            (zip-with f (cdr L) (cdr M)))))
